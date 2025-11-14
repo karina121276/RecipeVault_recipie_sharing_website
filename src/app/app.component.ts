@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  standalone: false,
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'Recipe_voult';
+    constructor(private router: Router) {}
+
+  // Check if current route is login
+  isLoginPage(): boolean {
+    return this.router.url === '/login' || this.router.url === '/signup';
+  }
+}

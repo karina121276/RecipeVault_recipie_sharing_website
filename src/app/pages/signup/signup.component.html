@@ -1,0 +1,11 @@
+<div class="form-container">
+  <h2>Signup</h2>
+  <form  #registerForm="ngForm" (ngSubmit)="onRegister()">
+    <input type="text" name="name"  [(ngModel)]="newUser.name"  #name="ngModel" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email"  [(ngModel)]="newUser.email"  #email="ngModel" required />
+    <input type="password" name="password" placeholder="Password"  [(ngModel)]="newUser.password" #password="ngModel" required />
+    <input type="password" name="confirmPassword" placeholder="Confirm Password"  [(ngModel)]="newUser.confirmPassword"   #confirmPassword="ngModel" required />
+    <button type="submit">Signup</button>
+  </form>
+  <p>Already have an account? <a routerLink="/login">Login</a></p>
+</div>

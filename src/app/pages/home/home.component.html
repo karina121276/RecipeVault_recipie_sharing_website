@@ -1,0 +1,74 @@
+<!-- 🌐 Navbar -->
+
+<!-- 🌟 Hero Section -->
+<header class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Welcome to RecipeVault</h1>
+    <p>Discover, Cook, and Share the world’s best recipes</p>
+    <a routerLink="/addrecipe" class="btn">➕ Share Your Recipe</a>
+  </div>
+</header>
+
+<!-- 🍴 Features Section -->
+<section class="features">
+  <h2>Why RecipeVault?</h2>
+  <div class="feature-list">
+    <div class="feature-card">
+      <img src="easy.jpg" alt="Easy Cooking">
+      <h3>Easy to Cook</h3>
+      <p>Step-by-step instructions that anyone can follow.</p>
+    </div>
+    <div class="feature-card">
+      <img src="sharep.jpg" alt="Share Recipes">
+      <h3>Share Recipes</h3>
+      <p>Upload your secret recipes and inspire others.</p>
+    </div>
+    <div class="feature-card">
+      <img src="foodi.jpg" alt="Community">
+      <h3>Food Lovers Community</h3>
+      <p>Connect with thousands of food enthusiasts.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🥘 Popular Recipes -->
+<section class="popular-recipes">
+  <h2>Popular Recipes</h2>
+  <div class="recipe-grid">
+
+    <!-- Recipe Card -->
+    <div class="recipe-card">
+      <img src="vegies.jpg" alt="Pasta">
+      <h3>veggies</h3>
+      <div class="card-actions">
+         <button class="btn view-btn"routerLink="/view9">👀 View Details</button>       <!-- (click)="viewRecipe(recipe.id)"  -->
+        <button class="btn share-btn"routerLink="/contactus" >🔗 Share</button>
+        <!-- //routerLink="/view1" -->
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <img src="nonveg.jpg" alt="Pizza">
+      <h3>non-veg</h3>
+      <div class="card-actions">
+        <button class="btn view-btn"routerLink="/view10">👀 View Details</button>
+        <button class="btn share-btn"routerLink="/contactus">🔗 Share</button>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <img src="italian.jpg" alt="Salad">
+      <h3>italian</h3>
+      <div class="card-actions">
+        <button class="btn view-btn"routerLink="/view11">👀 View Details</button>
+        <button class="btn share-btn"routerLink="/contactus">🔗 Share</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 📌 Footer -->
+
